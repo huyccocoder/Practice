@@ -91,12 +91,62 @@ html{
 }
 
 #slider{
+    padding-top: 50%;
+    background: url('../img/slider1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .infor{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 32px 16px;
+    display: flex;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infor .infor__palce{
+    font-size: 24px;
+    margin: 10px 0;
+    
+}
+
+.infor .infor__decript{
+    font-size: 15px;
+    margin: 15px 0;
 
 }
 
 #content{
 
 }
+
+#content .content__section{
+    padding: 64px 16px;
+    justify-items: center;
+}
+
+#content .section-band{
+    
+}
+
+#content .section-content {
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+#content .section-description{
+    color: #888;
+    font-size: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    font-weight: 500;
+}
+
 
 #footer{
 
