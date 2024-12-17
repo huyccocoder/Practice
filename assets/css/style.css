@@ -55,6 +55,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#content .list-item,
 #nav, .sub-nav{
     list-style-type: none;
 }
@@ -68,6 +69,12 @@ html{
 #header{
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
 }
 
 #nav{
@@ -210,21 +217,54 @@ html{
 }
 
 
-.list-band {
+.list-member {
     padding: 32px 0;
 }
 
 .list-name{
     font-size: 15px;
     margin: 15px 0;
-
 }
 
 .list-img{
     width: 154px;
     border-radius: 4px;
 }
+/* TOUR */
+#content .tour-section{
+    background-color: #000;
+}
 
+#content .list-tour{
+    background-color: #fff;
+    margin: 30px 0;
+    
+}
+
+#content .list-item{
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+
+}
+
+#content .sold-tour{
+    background-color: #f44336;
+    color: #fff;
+    padding: 4px 8px; 
+    margin-left: 16px;
+    font-size: 15px;
+}
+
+#content .quantity{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px 8px;
+    margin-top: -4px;
+}
 
 #footer{
 
