@@ -111,7 +111,7 @@
                                 <p class="mt-16 item-time">Fri 27 Nov 2016</p>
                                 <p class="mt-16 item-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="mt-16 btn">Buy Tickets</button>
+                                <button class="mt-16 btn js-btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@
                                 <p class="mt-16 item-time">Sat 28 Nov 2016</p>
                                 <p class="mt-16 item-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="mt-16 btn ">Buy Tickets</button>
+                                <button class="mt-16 btn js-btn ">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -133,7 +133,7 @@
                                 <p class="mt-16 item-time">Sun 29 Nov 2016</p>
                                 <p class="mt-16 item-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="mt-16 btn">Buy Tickets</button>
+                                <button class="mt-16 btn js-btn">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -157,10 +157,10 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal">
+        <div class="modal js-modal">
             <div class="modal-container">
 
-                <div class="modal-close ti-close"></div>
+                <div class="modal-close js-modal-close ti-close"></div>
 
                 <div class="modal-header">
 
@@ -193,7 +193,32 @@
 
         <!-- JS - Modal -->
         <script>
+            const clickBtns = document.querySelectorAll('.js-btn');
+            const modal = document.querySelector('.js-modal');
+            const closeModal = document.querySelector('.js-modal-close');
+            const modalContainer = document.querySelector('.modal-container');
+            
 
+            function showBuyTicket(){
+                modal.classList.add('open');
+            }
+            
+            function hideBuyTicket(){
+                modal.classList.remove('open');
+            }
+
+            for(const clickBtn of clickBtns){
+                clickBtn.addEventListener('click', showBuyTicket);
+            }
+
+            closeModal.addEventListener('click', hideBuyTicket);
+
+            modal.addEventListener('click', hideBuyTicket)
+
+            modalContainer.addEventListener('click', function(event){
+                event.stopPropagation();
+            })
+            
         </script>
     </div>
 </body>
