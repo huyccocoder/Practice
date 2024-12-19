@@ -470,6 +470,11 @@ label.modal-label {
     justify-content: flex-end;
 }
 
+/* IMG */
+.bground-img{
+    width: 100%;
+    height: auto;
+}
 
 #footer{
 
