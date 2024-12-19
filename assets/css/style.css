@@ -16,8 +16,16 @@
     margin-top: 8px;
 }
 
+.mt-12{
+    margin-top: 12px;
+}
+
 .mt-16{
     margin-top: 16px;
+}
+
+.pull-right{
+    float: right;
 }
 
 .text-center{
@@ -27,6 +35,10 @@
 .row{
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.w-80{
+    width: 95% !important;
 }
 
 .row::after{
@@ -51,6 +63,10 @@
     width: 33.3333%;
 }
 
+.s-col-ful{
+    width: 100%;
+}
+ /* ------------------------------------------ */ */
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -417,6 +433,43 @@ label.modal-label {
 .modal-help{
     color: #2196f3;
 }
+
+/* CONTACT */
+
+.box-contact{
+    padding: 32px 0 ;
+    width: 100%;
+}
+
+.contact-info{
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 1.6;
+    
+}
+
+.contact-info i[class*='ti-']{
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+}
+
+.form-top{
+    display: flex;
+    right: 0;
+}
+
+.item-top{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 #footer{
 
